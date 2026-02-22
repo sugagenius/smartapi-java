@@ -72,6 +72,7 @@ public class OrderParams {
 	
 	public String symboltoken;
 	
+	public String scripconsent;
 	
 
 }

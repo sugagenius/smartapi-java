@@ -305,7 +305,7 @@ public class SmartConnect {
 				params.put("triggerprice", orderParams.triggerprice);
 
 			params.put("variety", variety);
-
+			params.put("scripconsent", "yes");
 			JSONObject jsonObject = smartAPIRequestHandler.postRequest(this.apiKey, url, params, accessToken);
 			Order order = new Order();
 			order.orderId = jsonObject.getJSONObject("data").getString("orderid");
